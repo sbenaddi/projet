@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
-<hibernate-configuration>
-	<session-factory>
-		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="hibernate.connection.url">jdbc:mysql://eu-cdbr-west-02.cleardb.net:3306/heroku_187058818f98432</property>
-		<property name="hibernate.connection.username">b2ba8d6135adc0</property>
-		<property name="hibernate.connection.password">86c3dadf</property>
-		<property name="connection.autoReconnect">true</property> 
-        <property name="connection.autoReconnectForPools">true</property> 
-        <property name="connection.is-connection-validation-required">true</property> 
-		<property name="show_sql">true</property>
-		<property name="hbm2ddl.auto">create</property>
+
+	<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.username">sxhshytyuaczmi</property>
+        <property name="hibernate.connection.password">5d8954ac3952cde6a6ba8a8ffe21b91d5c58525d4fc521b8dc6cf28fba5b7ece</property>
+        <property name="hibernate.connection.url">jdbc:postgres://ec2-79-125-124-30.eu-west-1.compute.amazonaws.com:5432/dfvqgim92okfe9</property>
+
+        <property name="hbm2ddl.auto">create</property>
+
+        <property name="show_sql">true</property>
+	   
 		<mapping class="model.bo.Utilisateur" />
 		<mapping class="model.bo.Comment" />
 		<mapping class="model.bo.Annonce" />
@@ -23,6 +24,6 @@
 		<mapping class="model.bo.PhotoEvent" />
 		<mapping class="model.bo.Notification" />
 
-
-	</session-factory>
+    </session-factory>
 </hibernate-configuration>
+	
