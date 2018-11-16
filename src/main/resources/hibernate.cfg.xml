@@ -8,7 +8,9 @@
         <property name="hibernate.connection.username">sxhshytyuaczmi</property>
         <property name="hibernate.connection.password">5d8954ac3952cde6a6ba8a8ffe21b91d5c58525d4fc521b8dc6cf28fba5b7ece</property>
         <property name="hibernate.connection.url">jdbc:postgres://ec2-79-125-124-30.eu-west-1.compute.amazonaws.com:5432/dfvqgim92okfe9</property>
-
+        <property name="connection.autoReconnect">true</property> 
+        <property name="connection.autoReconnectForPools">true</property> 
+        <property name="connection.is-connection-validation-required">true</property> 
         <property name="hbm2ddl.auto">create</property>
 
         <property name="show_sql">true</property>
